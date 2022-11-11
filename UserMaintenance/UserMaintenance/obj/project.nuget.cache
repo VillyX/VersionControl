@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UIxE88ZJFIBTZKvB/4Xy/tmTGDAiaWthZf8V7MZi0PTSkq1n+xJLB42LnkIJJGzb5nOqoRFN/vPyL/AFRKxC4Q==",
+  "dgSpecHash": "NM3rfOV8U7PLDWvAe251wmXwVgEZID3WFnqtK+BE8/Hu5gpSY88vTUtuEEVWN+iRIJ5yrcPQqDK1EMHtxC30XQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bfng8e\\source\\repos\\VersionControl\\UserMaintenance\\UserMaintenance\\UserMaintenance.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\i5 4590\\Source\\Repos\\VersionControl\\UserMaintenance\\UserMaintenance\\UserMaintenance.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
+    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
