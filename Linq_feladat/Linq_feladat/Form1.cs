@@ -14,6 +14,7 @@ namespace Linq_feladat
     public partial class Form1 : Form
     {
         List<Country> countries = new List<Country>();
+        List<Ramen> ramens = new List<Ramen>();
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +29,13 @@ namespace Linq_feladat
             {
                 string[] sor = sr.ReadLine().Split(';');
                 string orszag = sor[2];
-                
+
+                AddCountry(orszag);
+            }
+            sr.Close();
+
+            void AddCountry(string orszag)
+            {
                 //var ered = countries.Where(i => i.Name.Equals(orszag)).FirstOrDefault(); //LINQ lekérdezés a köv sor ugyanez másképpen felírva:
                 var ered = (from c in countries where c.Name.Equals(orszag) select c).FirstOrDefault();
 
@@ -42,7 +49,6 @@ namespace Linq_feladat
                     countries.Add(ered);
                 }
             }
-            sr.Close();
         }
 
     }
