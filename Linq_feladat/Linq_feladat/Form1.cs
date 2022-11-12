@@ -33,7 +33,7 @@ namespace Linq_feladat
                 Country aktorszag = AddCountry(orszag); //akrualis orszag
                 Ramen r = new Ramen
                 { //mapping
-                    ID = ramens.Count,
+                    ID = ramens.Count + 1,
                     CountryFK = aktorszag.ID,
                     Country = aktorszag,
                     Rating = Convert.ToDouble(sor[3]),
