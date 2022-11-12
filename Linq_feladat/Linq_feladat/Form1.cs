@@ -20,6 +20,7 @@ namespace Linq_feladat
         {
             InitializeComponent();
             LoadData("ramen.csv");
+            GetCountries();
         }
 
         void LoadData(string fileName)
@@ -46,7 +47,7 @@ namespace Linq_feladat
                 ramens.Add(r);
             }
             sr.Close();
-
+        }
             Brand AddBrand(string marka)
             {
                 //var ered = countries.Where(i => i.Name.Equals(orszag)).FirstOrDefault(); //LINQ lekérdezés a köv sor ugyanez másképpen felírva:
@@ -81,7 +82,21 @@ namespace Linq_feladat
                 }
                 return ered;
             }
+
+        void GetCountries()
+        {
+            var ered = from c in countries 
+                       where c.Name.Contains(textBox1.Text)
+                       orderby c.Name
+                       select c;
+
+            listBox1.DataSource = ered.ToList();
+            listBox1.DisplayMember = "Name";
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            GetCountries();
+        }
     }
 }
