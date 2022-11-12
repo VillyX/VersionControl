@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NM3rfOV8U7PLDWvAe251wmXwVgEZID3WFnqtK+BE8/Hu5gpSY88vTUtuEEVWN+iRIJ5yrcPQqDK1EMHtxC30XQ==",
+  "dgSpecHash": "oVT41YEgP4FPxMGuECBCrcHj65bFkzosGVfJ/ZjZTY+1Mh+7MUcLGkDdbOzABxIbOxjo0EO5lfhuxTzMfh78eQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\i5 4590\\Source\\Repos\\VersionControl\\UserMaintenance\\UserMaintenance\\UserMaintenance.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
-    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\i5 4590\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
