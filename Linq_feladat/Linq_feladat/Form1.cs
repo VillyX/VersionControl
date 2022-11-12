@@ -30,11 +30,21 @@ namespace Linq_feladat
                 string[] sor = sr.ReadLine().Split(';');
                 string orszag = sor[2];
 
-                AddCountry(orszag);
+                Country aktorszag = AddCountry(orszag); //akrualis orszag
+                Ramen r = new Ramen
+                { //mapping
+                    ID = ramens.Count,
+                    CountryFK = aktorszag.ID,
+                    Country = aktorszag,
+                    Rating = Convert.ToDouble(sor[3]),
+                    Name = aktorszag.Name,
+                    Brand = sor[0]
+                };
+                ramens.Add(r);
             }
             sr.Close();
 
-            void AddCountry(string orszag)
+            Country AddCountry(string orszag)
             {
                 //var ered = countries.Where(i => i.Name.Equals(orszag)).FirstOrDefault(); //LINQ lekérdezés a köv sor ugyanez másképpen felírva:
                 var ered = (from c in countries where c.Name.Equals(orszag) select c).FirstOrDefault();
@@ -48,6 +58,7 @@ namespace Linq_feladat
                     };
                     countries.Add(ered);
                 }
+                return ered;
             }
         }
 
