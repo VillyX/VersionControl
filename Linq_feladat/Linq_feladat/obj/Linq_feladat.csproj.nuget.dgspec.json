@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bfng8e\\Source\\Repos\\VersionControl\\UserMaintenance\\UserMaintenance\\UserMaintenance.csproj": {}
+    "C:\\Users\\bfng8e\\source\\repos\\VersionControl\\Linq_feladat\\Linq_feladat\\Linq_feladat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bfng8e\\Source\\Repos\\VersionControl\\UserMaintenance\\UserMaintenance\\UserMaintenance.csproj": {
+    "C:\\Users\\bfng8e\\source\\repos\\VersionControl\\Linq_feladat\\Linq_feladat\\Linq_feladat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bfng8e\\Source\\Repos\\VersionControl\\UserMaintenance\\UserMaintenance\\UserMaintenance.csproj",
-        "projectName": "UserMaintenance",
-        "projectPath": "C:\\Users\\bfng8e\\Source\\Repos\\VersionControl\\UserMaintenance\\UserMaintenance\\UserMaintenance.csproj",
+        "projectUniqueName": "C:\\Users\\bfng8e\\source\\repos\\VersionControl\\Linq_feladat\\Linq_feladat\\Linq_feladat.csproj",
+        "projectName": "Linq_feladat",
+        "projectPath": "C:\\Users\\bfng8e\\source\\repos\\VersionControl\\Linq_feladat\\Linq_feladat\\Linq_feladat.csproj",
         "packagesPath": "C:\\Users\\bfng8e\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bfng8e\\Source\\Repos\\VersionControl\\UserMaintenance\\UserMaintenance\\obj\\",
+        "outputPath": "C:\\Users\\bfng8e\\source\\repos\\VersionControl\\Linq_feladat\\Linq_feladat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bfng8e\\AppData\\Roaming\\NuGet\\NuGet.Config",
