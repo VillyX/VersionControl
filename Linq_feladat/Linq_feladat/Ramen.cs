@@ -10,7 +10,7 @@ namespace Linq_feladat
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Brand { get; set; }
+        public Brand Brand { get; set; } //csináltam egy brand osztályt a 4. feladatban, a típus ez a Brand
         public int CountryFK { get; set; }
         public Country Country { get; set; }
         public double Rating{ get; set; }
