@@ -98,5 +98,32 @@ namespace Linq_feladat
         {
             GetCountries();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //a kiválasztott országot mentsük ki egy orszag nevű változóba
+            Country orszag = (Country)listBox1.SelectedItem; //A (Country) típuskényszerítés
+            if (orszag == null)
+            {
+                return; // nem jó gyakorlat, a feladat kéri a kiugrást
+            }
+            var ered = from r in ramens
+                       where r.CountryFK == orszag.ID
+                       select r;
+
+            var ered2 = from d in ered
+                        group d.Rating by d.Brand.Name
+                        into f//elmentjük egy változóba, mert még felhasználjuk
+                        select new //oszlopok a datagridview-nak
+                        {
+                            markanev = f.Key,
+                            atlag = Math.Round(f.Average(), 2) //2 tizedesig
+                        };
+            var ered3 = from h in ered2
+                        orderby h.atlag descending
+                        select h;
+
+            dataGridView1.DataSource = ered3.ToList();
+        }
     }
 }
