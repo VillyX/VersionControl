@@ -33,6 +33,8 @@ namespace UserMaintenance
             this.lblFullName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnWriteToFile = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -56,10 +58,10 @@ namespace UserMaintenance
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(366, 261);
+            this.btnAdd.Location = new System.Drawing.Point(358, 197);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(86, 31);
+            this.btnAdd.Size = new System.Drawing.Size(122, 31);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -73,11 +75,33 @@ namespace UserMaintenance
             this.textBox1.Size = new System.Drawing.Size(114, 27);
             this.textBox1.TabIndex = 4;
             // 
+            // btnWriteToFile
+            // 
+            this.btnWriteToFile.Location = new System.Drawing.Point(358, 235);
+            this.btnWriteToFile.Name = "btnWriteToFile";
+            this.btnWriteToFile.Size = new System.Drawing.Size(122, 29);
+            this.btnWriteToFile.TabIndex = 5;
+            this.btnWriteToFile.Text = "button2";
+            this.btnWriteToFile.UseVisualStyleBackColor = true;
+            this.btnWriteToFile.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(358, 270);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(122, 29);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "button3";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 444);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnWriteToFile);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblFullName);
@@ -96,6 +120,8 @@ namespace UserMaintenance
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnWriteToFile;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
