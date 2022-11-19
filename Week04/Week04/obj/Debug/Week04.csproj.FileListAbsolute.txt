@@ -1,0 +1,15 @@
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\bin\Debug\Week04.exe.config
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\bin\Debug\Week04.exe
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\bin\Debug\Week04.pdb
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\bin\Debug\EntityFramework.dll
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\bin\Debug\EntityFramework.xml
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.csproj.AssemblyReference.cache
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.csproj.ResolveComReference.cache
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.Properties.Resources.resources
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.csproj.GenerateResource.cache
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.csproj.CoreCompileInputs.cache
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.csproj.CopyComplete
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.exe
+C:\Users\bfng8e\source\repos\VersionControl\Week04\Week04\obj\Debug\Week04.pdb

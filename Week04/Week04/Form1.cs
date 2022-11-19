@@ -14,7 +14,7 @@ namespace Week04
 {
     public partial class Form1 : Form
     {
-        List<Flat> Flats; //4.1
+        List<Flat> flats; //4.1
         RealEstateEntities re = new RealEstateEntities(); //4.2
 
         // 6.1 feladat
@@ -24,7 +24,7 @@ namespace Week04
 
         void LoadData() //4.3
         {
-            Flats = re.Flat.ToList(); //4.4
+            flats = re.Flat.ToList(); //4.4
         }
 
         void CreateExcel() //6.2
@@ -49,9 +49,40 @@ namespace Week04
                 xlApp = null;
             }
         }
-        private void CreateTable()
+        private void CreateTable() //7.1
         {
-            
+            string[] headers = new string[] { //7.2
+             "Kód",
+             "Eladó",
+             "Oldal",
+             "Kerület",
+             "Lift",
+             "Szobák száma",
+             "Alapterület (m2)",
+             "Ár (mFt)",
+             "Négyzetméter ár (Ft/m2)"};
+
+            object[,] values = new object[flats.Count, headers.Length]; //7.4
+            int counter = 0;
+
+            for (int i = 0; i < headers.Length; i++) //7.3
+            {
+                xlSheet.Cells[1, i + 1] = headers[i]; //[sor, oszlop] az excelben
+            }
+
+            foreach (var f in flats) //7.5
+            {
+                values[counter, 0] = f.Code;
+                values[counter, 1] = f.Vendor;
+                values[counter, 2] = f.Side;
+                values[counter, 3] = f.District;
+                values[counter, 4] = f.Elevator;
+                values[counter, 5] = f.NumberOfRooms;
+                values[counter, 6] = f.FloorArea;
+                values[counter, 7] = f.Price;
+                values[counter, 8] = "";
+                counter++;
+            }
 
         }
 
@@ -59,6 +90,7 @@ namespace Week04
         {
             InitializeComponent();
             LoadData(); //4.3
+            CreateExcel();
         }
     }
 }
