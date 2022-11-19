@@ -64,6 +64,7 @@ namespace Week04
 
             object[,] values = new object[flats.Count, headers.Length]; //7.4
             int counter = 0;
+            Excel.Range r; //7.8
 
             for (int i = 0; i < headers.Length; i++) //7.3
             {
@@ -84,6 +85,11 @@ namespace Week04
                 counter++;
             }
 
+            r = xlSheet.get_Range(GetCell(2, 1), GetCell(flats.Count + 1, headers.Length)); //7.8
+            r.Value = values;
+            r = xlSheet.get_Range(GetCell(2, 9),
+                        GetCell(flats.Count, 9));
+            r.Value = "=1000000*"+GetCell(2,8)+"/"+GetCell(2,7);
         }
         private string GetCell(int x, int y) //7.7
         {
