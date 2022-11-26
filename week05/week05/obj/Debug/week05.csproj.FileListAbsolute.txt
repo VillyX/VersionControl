@@ -1,0 +1,9 @@
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\bin\Debug\week05.exe.config
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\bin\Debug\week05.exe
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\bin\Debug\week05.pdb
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.csproj.AssemblyReference.cache
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.Properties.Resources.resources
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.csproj.GenerateResource.cache
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.csproj.CoreCompileInputs.cache
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.exe
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.pdb
