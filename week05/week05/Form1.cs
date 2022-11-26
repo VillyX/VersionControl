@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using System.Xml;
 using week05.Entities;
 using week05.MnbServiceReference;
@@ -23,6 +24,16 @@ namespace week05
             // GetRates();
 
             ReadXml();
+
+            chartRateData.DataSource = Rates;
+            chartRateData.Series[0].ChartType = SeriesChartType.Line; //vonaldiagram
+            chartRateData.Series[0].XValueMember = "date";
+            chartRateData.Series[0].YValueMembers = "value";
+            chartRateData.Series[0].BorderWidth = 2;
+            chartRateData.Legends[0].Enabled = false;
+            chartRateData.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartRateData.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartRateData.ChartAreas[0].AxisY.IsStartedFromZero = false;
 
         }
 
@@ -61,7 +72,7 @@ namespace week05
 
             GetExchangeRatesResponseBody response = mnbService.GetExchangeRates(request);
             string result = response.GetExchangeRatesResult;
-            MessageBox.Show(result);
+            // MessageBox.Show(result);
             return result;
         }
     }
