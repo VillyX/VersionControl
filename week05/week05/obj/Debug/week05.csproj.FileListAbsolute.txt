@@ -7,3 +7,4 @@ C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.cspro
 C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.csproj.CoreCompileInputs.cache
 C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.exe
 C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.pdb
+C:\Users\bfng8e\source\repos\VersionControl\week05\week05\obj\Debug\week05.Form1.resources
