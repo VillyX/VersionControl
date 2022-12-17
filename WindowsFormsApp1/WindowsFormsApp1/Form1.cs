@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         List<Tick> ticks;
         PortfolioEntities context = new PortfolioEntities(); //4-es feladat
         List<PortfolioItem> portfolio = new List<PortfolioItem>();
-    
+        List<decimal> Nyereségek = new List<decimal>(); //8-as feladat    
         public Form1()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
 
             CreatePortfolio(); //nem fgv, hanem eljárás a visszaadott érték hiánya miatt (5-ös feladat még mindig)
 
-            List<decimal> Nyereségek = new List<decimal>(); //8-as feladat
+
             int intervalum = 30;
             DateTime kezdőDátum = (from x in ticks select x.TradingDay).Min();
             DateTime záróDátum = new DateTime(2016, 12, 30);
@@ -45,6 +45,11 @@ namespace WindowsFormsApp1
                                       select x)
                                         .ToList();
             // MessageBox.Show(nyereségekRendezve[nyereségekRendezve.Count() / 5].ToString());
+            //Mentes();
+        }
+
+        private void Mentes()
+        {
             SaveFileDialog sfv = new SaveFileDialog(); //9-es feladat, save file
             sfv.ShowDialog();
             using (StreamWriter sw = new StreamWriter(sfv.FileName))
@@ -79,6 +84,11 @@ namespace WindowsFormsApp1
                 value += (decimal)last.Price * item.Volume;
             }
             return value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Mentes(); // nem szép, tudom
         }
     }
 }
