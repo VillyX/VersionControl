@@ -21,6 +21,8 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            ticks = context.Tick.ToList();
+            dataGridView1.DataSource = ticks; //a ticks lista (5-ös feladat)
         }
     }
 }
