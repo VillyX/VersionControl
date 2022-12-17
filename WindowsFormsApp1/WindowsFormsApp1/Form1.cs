@@ -25,6 +25,28 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = ticks; //a ticks lista (5-ös feladat)
 
             CreatePortfolio(); //nem fgv, hanem eljárás a visszaadott érték hiánya miatt (5-ös feladat még mindig)
+
+            List<decimal> Nyereségek = new List<decimal>(); //8-as feladat
+            int intervalum = 30;
+            DateTime kezdőDátum = (from x in ticks select x.TradingDay).Min();
+            DateTime záróDátum = new DateTime(2016, 12, 30);
+            TimeSpan z = záróDátum - kezdőDátum;
+            for (int i = 0; i < z.Days - intervalum; i++)
+            {
+                decimal ny = GetPortfolioValue(kezdőDátum.AddDays(i + intervalum))
+                           - GetPortfolioValue(kezdőDátum.AddDays(i));
+                Nyereségek.Add(ny);
+                Console.WriteLine(i + " " + ny);
+            }
+
+            var nyereségekRendezve = (from x in Nyereségek
+                                      orderby x
+                                      select x)
+                                        .ToList();
+            MessageBox.Show(nyereségekRendezve[nyereségekRendezve.Count() / 5].ToString());
+
+
+
         }
 
         private void CreatePortfolio()
